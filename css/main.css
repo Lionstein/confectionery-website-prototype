@@ -125,10 +125,16 @@ div {
   padding-top: .75em;
 }
 
+.center {
+  text-align: center;
+}
+
 .absolute {
   position: absolute;
-  top: 9.7em;
-  left: 5em;
+  bottom: 1em;
+  left: 0em;
+  width: 100%;
+  text-align: center;
 }
 
 .img-flex {
@@ -155,6 +161,10 @@ div {
   display: inline-block;
   max-width: 25em;
   vertical-align: middle;
+}
+
+section {
+  align-content: center;
 }
 
 @media only screen and (min-width: 25em) {
