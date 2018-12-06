@@ -1,4 +1,14 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   line-height: 1.5;
   box-sizing: border-box;
 }
@@ -8,9 +18,9 @@ html {
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 3rem;
-  color: #EDA0FF;
+  color: #eda0ff;
   color: #fff;
   text-align: center;
   padding: .5em 0;
@@ -19,26 +29,26 @@ h1 {
 }
 
 nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.125rem;
-  color: #A0B7FF;
+  color: #a0b7ff;
   text-align: center;
   margin: 0;
 }
 
 .definition {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   color: #2f2d13;
 }
 
 .c {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: .75rem;
   color: #2f2d13;
 }
 
 a:hover {
-  background-color: #9291E8;
+  background-color: #9291e8;
 }
 
 a {
@@ -46,7 +56,7 @@ a {
   color: #fff;
   padding: .2em .5em .3em;
   display: block;
-  background-color: #A0B7FF;
+  background-color: #a0b7ff;
 }
 
 ul {
@@ -60,18 +70,18 @@ ul {
 
 li {
   border-width: 1px;
-  border-color: #9291E8;
+  border-color: #9291e8;
   border-style: solid;
   width: 33.3333%;
   text-align: center;
 }
 
 header {
-  background-color: #EDA0FF;
+  background-color: #eda0ff;
 }
 
 footer {
-  background-color: #EDA0FF;
+  background-color: #eda0ff;
   text-align: center;
   padding: .75em;
 }
@@ -81,7 +91,7 @@ body {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.875rem;
 }
 
@@ -101,11 +111,94 @@ img {
 }
 
 div {
+  font-family: Roboto, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.relative {
+  position: relative;
+}
+
 .firstimage {
   padding-top: .75em;
+}
+
+.absolute {
+  position: absolute;
+  top: 9.7em;
+  left: 5em;
+}
+
+.img-flex {
+  padding-top: .75em;
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  text-align: left;
+  font-size: 1.125rem;
+}
+
+.text {
+  display: inline-block;
+  text-align: left;
+  max-width: 25em;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.image {
+  padding: 1em;
+  display: inline-block;
+  max-width: 25em;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav li {
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
