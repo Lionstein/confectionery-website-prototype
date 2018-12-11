@@ -38,7 +38,7 @@ nav {
 
 .definition {
   font-family: Roboto, sans-serif;
-  color: #C191E8;
+  color: #c191e8;
 }
 
 .c {
@@ -133,7 +133,7 @@ div {
 .absolute {
   position: absolute;
   bottom: 1em;
-  left: 0em;
+  left: 0;
   width: 100%;
   text-align: center;
 }
@@ -155,7 +155,7 @@ div {
   max-width: 25em;
   padding: 1em;
   vertical-align: middle;
-  color: #C191E8;
+  color: #c191e8;
 }
 
 .image {
@@ -163,10 +163,6 @@ div {
   display: inline-block;
   max-width: 25em;
   vertical-align: middle;
-}
-
-section {
-  align-content: center;
 }
 
 @media only screen and (min-width: 25em) {
@@ -183,6 +179,14 @@ section {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  section {
+    align-content: center;
   }
 
 }
